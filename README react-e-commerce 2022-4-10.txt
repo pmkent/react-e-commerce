@@ -1,3 +1,21 @@
+2022-4-13
+
+https://www.youtube.com/watch?v=CDtPMR5y0QU
+59:33 / 6:17:16
+06- Add Routing
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+
+Note: Changing HREFs to Link saves refresh trip and makes the page SPA!
+
+6. Add routing
+  1. npm i react-router-dom
+  2. create rout for home screen
+  3. create route for product screen
+
+https://www.npmjs.com/package/react-router-dom
+npm i react-router-dom
+
 2022-4-11
 48:00 / 6:17:16
 05- List Products
