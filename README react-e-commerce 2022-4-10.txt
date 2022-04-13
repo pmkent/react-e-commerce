@@ -1,3 +1,11 @@
+2022-4-11
+48:00 / 6:17:16
+05- List Products
+#React #Node #Tutorial
+React Course 2022 - MERN ECommerce Like Amazon In 6 Hours
+
+$$$$$
+
 Move .gitignore to the root node_modules, build (instead of /node_modules. /build)
 
 philm@DESKTOP-5VCQQ9O MINGW64 /c/phil/dev/projects/tutorials/reactjs/react-e-commerce/front-end (master)
