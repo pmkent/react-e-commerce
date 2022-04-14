@@ -1,5 +1,82 @@
 2022-4-13
 
+1:08:59 / 6:17:16
+08- Fetch Products
+#React #Node #Tutorial
+MERN ECommerce Course 2022
+
+
+7. Backend server 1:00:58 / 6:17/16
+
+From now on use
+npm start
+instead of 'node server.js'
+
+backent/package.json
+server section
+"start": "nodemon server.js",
+
+npm install nodemon --save-dev (ship this package only for development - devDependencies in package.json?)
+Install nodemon to refresh the server whenever there is a change in the server code.
+
+http://localhost:5000/api/products - Now works!
+
+PS C:\phil\dev\projects\tutorials\reactjs\react-e-commerce\back-end> node server.js
+Now serving at http://localhost:5000
+
+call back function () => {}
+
+PS C:\phil\dev\projects\tutorials\reactjs\react-e-commerce\back-end> npm install express
+
+npm init
+
+package.json
+"type": "module", // to use ?? we are going to use 'import' instead of 'require' to use ES6 marshall to import and export
+
+PS C:\phil\dev\projects\tutorials\reactjs\react-e-commerce> cd .\back-end\
+PS C:\phil\dev\projects\tutorials\reactjs\react-e-commerce\back-end> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (back-end)
+version: (1.0.0)
+description: NodeJS backend server for products and probably orders
+entry point: (index.js)
+test command:
+git repository:
+keywords: NodeJS, Server, Back-end
+author: Phil MK
+license: (ISC)
+About to write to C:\phil\dev\projects\tutorials\reactjs\react-e-commerce\back-end\package.json:
+
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "NodeJS backend server for products and probably orders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJS",
+    "Server",
+    "Back-end"
+  ],
+  "author": "Phil MK",
+  "license": "ISC"
+}
+
+Is this OK? (yes) yes
+
+$$
+
 https://www.youtube.com/watch?v=CDtPMR5y0QU
 59:33 / 6:17:16
 06- Add Routing
@@ -51,22 +128,22 @@ Lessons
   iii. render products
   iv. style products
 6. Add page routing
-npm i react-router-dom
-create route for home screen
-create router for product screen
-Create Node.JS Server
-run npm init in root folder
-Update package.json set type: module
-Add .js to imports
-npm install express
-create server.js
-add start command as node backend/server.js
-require express
-create route for / return backend is ready.
-move products.js from frontend to backend
-create route for /api/products
-return products
-run npm start
+  i. npm i react-router-dom
+  ii. create route for home screen
+  iii. create router for product screen
+7. Create Node.JS Server
+  i. run npm init in root folder
+  ii. Update package.json set type: module
+  iii. Add server.js to back-end??? imports
+  iv. npm install express
+  v. Create server.js
+  vi. Add start command as node backend/server.js
+  vii. require express
+  viii. create route for / return backend is ready.
+  ix. move products.js from frontend to backend
+  x. create route for /api/products
+  xi. return products
+  xii. run npm start
 Fetch Products From Backend
 set proxy in package.json
 npm install axios
