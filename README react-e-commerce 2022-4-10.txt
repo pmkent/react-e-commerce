@@ -1,5 +1,31 @@
 2022-4-15
 
+NEW:
+After loading and error messages, in the Chrome browser developer tools Network > Throtling to Slow 3G!
+
+NEW:
+npm install use-reducer-logger --force // not compatible with react 17 so force?
+
+State is complex and depends on previous state for the next one. That's why we useReducer function
+
+9. Manage State By Reducer Hook
+  i. define reducer
+  ii. update fetch data
+  iii. get state from useReducer
+  iv. use-reducer-logger
+  v. 
+
+https://www.youtube.com/watch?v=CDtPMR5y0QU&t=4184s
+1:16:23 / 6:17:16
+09- Manage State By Reducer Hook
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+17,848 views Mar 2, 2022
+Coding with Basir
+37.9K subscribers
+
+$$$$$
+
 npm i cors express nodemon
 https://reactjs.org/docs/hooks-state.html
 npm install axios
@@ -177,11 +203,11 @@ Lessons
   ii. npm install axios
   iii. use state hook
   iv. use effect hook
-  v. use reducer hook
+  v. use reducer hook ????
 9. Manage State By Reducer Hook
   i. define reducer
   ii. update fetch data
-  iii. get state from usReducer
+  iii. get state from useReducer
 Add bootstrap UI Framework
 npm install react-bootstrap bootstrap
 update App.js

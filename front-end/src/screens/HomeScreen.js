@@ -1,51 +1,66 @@
-import React, { useEffect, useState } from 'react';
+import React, { 
+    useEffect, 
+    useReducer,
+    //  useState 
+} from 'react';
 import { Link } from 'react-router-dom';
-// import data from '../data';
 import axios from 'axios';
+import logger from 'use-reducer-logger'; // best debugger for state
+
+export const ACTION = {
+    FETCH_REQUEST: 'fetch-request',
+    FETCH_SUCCESS: 'fetch-success',
+    FETCH_FAIL: 'fetch-fail'
+}
+
+const reducer = (state, action) => {
+    switch (action.type) {
+        case ACTION.FETCH_REQUEST:
+            return {...state, loading: true}; // keep current list and update only loading field
+        case ACTION.FETCH_SUCCESS:
+            return {...state, products: action.payload, loading: false}
+        case ACTION.FETCH_FAIL:
+            return {...state, loading: false, error: action.payload}
+        default:
+            return state;
+    }
+}
 
 export default function HomeScreen() {
-    const [products, setProducts] = useState([]);
+    // const [state, dispatch] = useReducer(first, second, third)
+    const [{loading, error, products}, dispatch] = useReducer(logger(reducer), {
+        products: [],
+        loading: true,
+        error: ''
+    });
+    // const [products, setProducts] = useState([]);
+    
     useEffect(() => {
       const fetchData = async () => {
-          const result = await axios.get('/api/products');
-        //   const result = await axios.get('http://localhost:5000/api/products');
-          setProducts(result.data);
+          dispatch({type: ACTION.FETCH_REQUEST});
+          try {
+              const result = await axios.get('/api/products');
+              dispatch({type: ACTION.FETCH_SUCCESS, payload: result.data});
+          } catch (err) {
+              dispatch({type: ACTION.FETCH_FAIL, payload: err.message});
+          }
+        //   const result = await axios.get('/api/products');
+        //   setProducts(result.data);
       };
       fetchData();
-    // //   console.log('%%%products >' + products + '<');
-    //   console.log(products);
-    // useEffect(() => {
-    //     async function getProducts() {
-    //         const response = await fetch('http://localhost:5000/api/products', {
-    //             method: 'GET',
-    //             headers: {
-    //                 accept: 'application/json',
-    //             },
-    //         });
-
-    //         const data2 = await response.json();
-    //         setProducts(data2.results);
-    //     };
-
-    //     getProducts();
     }, []);
     
     return (
         <div>
-
             <h1>Featured Products:</h1>
             <div className='products'>
-
-            {/* {products.length === 0 ? (<div className='cart cart-header'>Cart is empty</div>)
-               :
-               (<div className='cart cart-header'>
-                   You have {products.length} in the cart {' '}
-                </div>)
-               } */}
-
                 {
+                    loading ? <div>Loading ... </div>
+                    :
+                    error ? <div>{error}</div>
+                    :
+
                     products.map(product => (
-                    // data.products.map(product => (
                     <div className='product' key={product.slug}>
                         <Link to={`/product/${product.slug}`}>
                             <img src={product.image} alt={product.name} />
