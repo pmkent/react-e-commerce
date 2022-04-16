@@ -1,4 +1,32 @@
+2022-4-15
+
+npm i cors express nodemon
+https://reactjs.org/docs/hooks-state.html
+npm install axios
+https://axios-http.com/docs/intro
+
+Bad idea, forsaken:
+npx create-react-app@latest front-end
+
+8. Fetch Products From Backend
+  i. set proxy in package.json
+  ii. npm install axios
+  iii. use state hook
+  iv. use effect hook
+  v. use reducer hook
+
+https://www.youtube.com/watch?v=CDtPMR5y0QU&t=4184s
+1:09:54 / 6:17:16
+08- Fetch Products
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+
 2022-4-13
+
+1:09:43 / 6:17:16
+08- Fetch Products
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
 
 1:08:59 / 6:17:16
 08- Fetch Products
@@ -144,16 +172,16 @@ Lessons
   x. create route for /api/products
   xi. return products
   xii. run npm start
-Fetch Products From Backend
-set proxy in package.json
-npm install axios
-use state hook
-use effect hook
-use reducer hook
-Manage State By Reducer Hook
-define reducer
-update fetch data
-get state from usReducer
+8. Fetch Products From Backend
+  i. set proxy in package.json
+  ii. npm install axios
+  iii. use state hook
+  iv. use effect hook
+  v. use reducer hook
+9. Manage State By Reducer Hook
+  i. define reducer
+  ii. update fetch data
+  iii. get state from usReducer
 Add bootstrap UI Framework
 npm install react-bootstrap bootstrap
 update App.js
