@@ -1,7 +1,41 @@
-2022-4-15
+2022-4-18
+
+-boostrap styling pulling footer to the bottom (new site-container CSS class)
+-added boostrap min css to index.js?
+-added footer
+
+-Import Navbar, Container from react-bootsrap/Navbar(Container)
+PS C:\phil\dev\projects\tutorials\reactjs\react-e-commerce\front-end> npm install react-router-bootstrap to get LinkContainer into App.js
+
+LinkedContainer is a 'named' import so it needs to be in braces?
+
+npm install react-bootstrap bootstrap
+back-end/npm uninstall react-bootstrap bootstrap
+
+10. Add bootstrap UI Framework
+  i. npm install react-bootstrap bootstrap
+  ii. update App.js
+
+https://github.com/basir/mern-amazona
+
+Git branch:
+add-bootstrap-ui
+
+https://www.youtube.com/watch?v=CDtPMR5y0QU&t=4184s
+1:25:38 / 6:17:16
+10- add Bootstrap
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+18,260 views Mar 2, 2022
+
+Coding with Basir
+37.9K subscribers
+
+2022-4-15 Good Friday
 
 NEW:
 After loading and error messages, in the Chrome browser developer tools Network > Throtling to Slow 3G!
+-Refresh page to see the loading message
 
 NEW:
 npm install use-reducer-logger --force // not compatible with react 17 so force?
@@ -208,10 +242,10 @@ Lessons
   i. define reducer
   ii. update fetch data
   iii. get state from useReducer
-Add bootstrap UI Framework
-npm install react-bootstrap bootstrap
-update App.js
-Create Product and Rating Component
+10. Add bootstrap UI Framework
+  i. npm install react-bootstrap bootstrap
+  ii. update App.js
+11. Create Product and Rating Component
 create Rating component
 Create Product component
 Use Rating component in Product component
