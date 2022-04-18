@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // making amazona header look great? 4-18-22
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
