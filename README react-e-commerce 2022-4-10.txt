@@ -1,5 +1,33 @@
 2022-4-18
 
+Font Awesome. npm import ???
+https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css
+
+rating >= 1
+              ? 'fas fa-star'
+              : rating >= 0.5
+              ? 'fas fa-star-half-alt'
+              : 'far fa-star'
+
+ <Rating rating={product.rating} numReviews={product.numReview} />
+<Product product={product}/>
+
+11_product-and-rating
+
+https://github.com/basir/mern-amazona
+
+From product list
+Next 10_bootstrap-cat-component?
+
+1:34:26 / 6:17:16
+
+•
+11- Create Product Component
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+18,260 viewsMar 2, 2022
+$$$
+
 -boostrap styling pulling footer to the bottom (new site-container CSS class)
 -added boostrap min css to index.js?
 -added footer
