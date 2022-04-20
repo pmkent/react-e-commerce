@@ -42,3 +42,7 @@ main {
   color: #ffc000;
   /* color: goldenrod; */
 }
+
+.img-large {
+  max-width: 100%;
+}

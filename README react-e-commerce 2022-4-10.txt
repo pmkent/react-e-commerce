@@ -1,4 +1,46 @@
+2022-4-19
+
+2:02:36 / 6:17:16
+12- Add Product Screen
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+
+Helmet, HelmetProvider create a tab title on product details! Cool!
+                        <Helmet>
+                            <title>{product.name}</title>
+                        </Helmet>
+                        <h1>{product.name}</h1>
+
+npm install react-helmet-async
+
+Margin top 3 rem:
+<Container className='mt-3'>
+
+Conditional rendering, react-bootstrap class d-width stretches the button full width!:
+                            {product.countInStock > 0 && (
+                                <ListGroup.Item>
+                                    <div className='d-grid'>
+                                        <Button variant='primary'>
+                                            Add to cart
+                                        </Button>
+                                    </div>
+                                </ListGroup.Item>
+                            )}
+
+<ListGroup variant='flush'> to remove border add the flush variant!
+
+12_product-details-screen
+
+12. Create Product Details Screen
+  i. fetch product from backend
+  ii. create 3 columns for image, info and action
+
 2022-4-18
+
+1:48:17 / 6:17:16
+12- Add Product Screen
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
 
 Font Awesome. npm import ???
 https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css
@@ -274,12 +316,12 @@ Lessons
   i. npm install react-bootstrap bootstrap
   ii. update App.js
 11. Create Product and Rating Component
-create Rating component
-Create Product component
-Use Rating component in Product component
-Create Product Details Screen
-fetch product from backend
-create 3 columns for image, info and action
+  i. create Rating component
+  ii. Create Product component
+  iii. Use Rating component in Product component
+12. Create Product Details Screen
+  i. fetch product from backend
+  ii. create 3 columns for image, info and action
 Create Loading and Message Component
 create loading component
 use spinner component

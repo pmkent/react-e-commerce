@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HelmetProvider } from 'react-helmet-async';
+// import HelmetProvider from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import 'bootstrap/dist/css/bootstrap.min.css'; // making amazona header look great? 4-18-22
 import './index.css';
 import App from './App';
