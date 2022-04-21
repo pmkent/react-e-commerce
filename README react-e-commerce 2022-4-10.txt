@@ -1,4 +1,22 @@
+2022-4-21
+
+Chrome dev tools: Network throttle to Offline to test!
+
+Created loading message boxes and used them in home, product screens.
+
+2022-4-20
+
+13_loading-messge-component
+
+13. Create Loading and Message Component
+  i. create loading component
+  ii. use spinner component
+  iii. create message component
+  iv. create utils.js to define getError fuction
+
 2022-4-19
+
+Added product rating bootstrap, GET product nodejs API, react helmet tab title, product bootstrap. New - helmet
 
 2:02:36 / 6:17:16
 12- Add Product Screen
@@ -322,11 +340,11 @@ Lessons
 12. Create Product Details Screen
   i. fetch product from backend
   ii. create 3 columns for image, info and action
-Create Loading and Message Component
-create loading component
-use spinner component
-craete message component
-create utils.js to define getError fuction
+13. Create Loading and Message Component
+  i. create loading component
+  ii. use spinner component
+  iii. craete message component
+  iv. create utils.js to define getError fuction
 Create React Context For Add Item To Cart
 Create React Context
 define reducer

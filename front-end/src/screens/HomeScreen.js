@@ -11,6 +11,8 @@ import Product from '../components/Product';
 // import { AppContext } from '../AppContext';
 import { FETCH_FAILED, FETCH_REQUEST, FETCH_SUCCESS } from '../types';
 import { Helmet } from 'react-helmet-async';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 
 // export const ACTION = {
 //     FETCH_REQUEST: 'fetch-request',
@@ -51,14 +53,11 @@ export default function HomeScreen() {
     useEffect(() => {
       const fetchData = async () => {
         dispatch({type: FETCH_REQUEST});
-        // dispatch({type: ACTION.FETCH_REQUEST});
         try {
             const result = await axios.get('/api/products');
-            // dispatch({type: ACTION.FETCH_SUCCESS, payload: result.data});
             dispatch({type: FETCH_SUCCESS, payload: result.data});
         } catch (err) {
             dispatch({type: FETCH_FAILED, payload: err.message});
-            // dispatch({type: ACTION.FETCH_FAIL, payload: err.message});
         }
       };
       fetchData();
@@ -72,9 +71,11 @@ export default function HomeScreen() {
             <h1>Featured Products:</h1>
             <div className='products'>
                 {
-                    loading ? <div>Loading ... </div>
+                    // loading ? <div>Loading ... </div>
+                    loading ? <LoadingBox/>
                     :
-                    error ? <div>{error}</div>
+                    // error ? <div>{error}</div>
+                    error ? <MessageBox variant='danger'>{error}</MessageBox>
                     :
 
                     <Row>
