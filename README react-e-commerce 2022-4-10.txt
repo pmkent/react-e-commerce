@@ -1,3 +1,25 @@
+20224-24
+
+14_add-to-cart-implementation
+-Created a store context provider, reducer for add to cart. Wrapped base component with the StoreProvider, used store in product string using add item type
+2:21:06 / 6:17:16
+14- Create React Context
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+
+14. Implement Add To Cart
+  i. Create React Context For Add Item To Cart
+  ii. Create React Context
+  iii. define reducer
+  iv. create store provider
+  v. implement add to cart button click handler
+
+2:11:14 / 6:17:16
+14- Create React Context
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+18,260 views
+
 2022-4-21
 
 Chrome dev tools: Network throttle to Offline to test!
@@ -345,11 +367,12 @@ Lessons
   ii. use spinner component
   iii. craete message component
   iv. create utils.js to define getError fuction
-Create React Context For Add Item To Cart
-Create React Context
-define reducer
-create store provider
-implement add to cart button click handler
+14. Implement Add To Cart
+  i. Create React Context For Add Item To Cart
+  ii. Create React Context
+  iii. define reducer
+  iv. create store provider
+  v. implement add to cart button click handler
 Complete Add To Cart
 check exist item in the cart
 check count in stock in backend

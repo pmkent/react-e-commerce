@@ -5,13 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // making amazona header look gre
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { StoreProvider } from './context/Store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
-    {/* <App /> */}
+    <StoreProvider>
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
+    </StoreProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
