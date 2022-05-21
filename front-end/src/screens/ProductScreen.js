@@ -52,17 +52,31 @@ export default function ProductScreen() {
       fetchData();
     }, [slug]); // when a user switches the slug (product) useEffect to fetch new prouduct
 
-    const {state, dispatch: ctxDispatch} = useContext(Store);//StoreProvider);
-    const addToCartHanlder = () => {
-        ctxDispatch({type: ADD_CART_ITEM, payload: {...product, quantity: 1}});
+    // const {dispatch: ctxDispatch} = useContext(Store);//StoreProvider);
+    const {state, dispatch: ctxDispatch} = useContext(Store);
+    const {cart} = state;
+    // const addToCartHanlder = () => {
+    const addToCartHanlder = async() => {
+        const itemExists = cart.cartItems.find((x) => x._id === product._id);
+        const quantity = itemExists ? itemExists.quantity + 1 : 1;
+        const { data } = await axios.get(`/api/products/${product._id}`);
+        if (data.countInStock < quantity) {
+            window.alert('Sorry. Product is out of stock');
+            return;
+        }
+        ctxDispatch(
+            {
+                type: ADD_CART_ITEM, 
+                // payload: {...product, quantity: 1}
+                payload: {...product, quantity }
+            }
+        );
     }
 
     return (
-        // loading ? <div>Loading ...</div>
         loading ? <LoadingBox/>
         :
         error ? <MessageBox variant='danger'>{error}</MessageBox>
-        // error ? <div>{error}</div>
         :
         <Row>
             <Col md={6}>
@@ -132,6 +146,5 @@ export default function ProductScreen() {
                 </Card>
             </Col>
         </Row>
-        // <div>{slug}</div>
     )
 }
