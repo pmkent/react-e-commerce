@@ -1,4 +1,25 @@
-20224-24
+2022-5-21
+
+2:28:00 / 6:17:16
+16- Create Cart Screen
+#React #Node #Tutorial
+MERN ECommerce Course 2022 - Build Full ECommerce Website For All Levels Developers By React & Node
+
+2022-4-28
+
+15-complete-add-to-cart
+
+Video-15-Complete-Add-To-Cart
+
+15. Complete Add To Cart
+  i. check exist item in the cart
+  ii. check count in stock in backend
+  iii. Create Cart Screen
+  iv. create 2 columns
+  v. display items list
+  vi. create action column
+
+2022-4-24
 
 14_add-to-cart-implementation
 -Created a store context provider, reducer for add to cart. Wrapped base component with the StoreProvider, used store in product string using add item type
@@ -373,13 +394,13 @@ Lessons
   iii. define reducer
   iv. create store provider
   v. implement add to cart button click handler
-Complete Add To Cart
-check exist item in the cart
-check count in stock in backend
-Create Cart Screen
-create 2 columns
-display items list
-create action column
+15. Complete Add To Cart
+  i. check exist item in the cart
+  ii. check count in stock in backend
+  iii. Create Cart Screen
+  iv. create 2 columns
+  v. display items list
+  vi. create action column
 Complete Cart Screen
 click handler for inc/dec item
 click handler for remove item
